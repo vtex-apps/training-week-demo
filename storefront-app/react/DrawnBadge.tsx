@@ -3,7 +3,7 @@ import React, { FC, useMemo } from 'react'
 // import { canUseDOM } from 'vtex.render-runtime'
 
 type Props = {
-  label: string
+  label?: string
 }
 
 const DrawnBadge = ({ label }: Props) => {
@@ -12,7 +12,7 @@ const DrawnBadge = ({ label }: Props) => {
   return (
     <div className="pa3">
       <span>
-        {label}
+        {label ?? 'It should be a nice message 🤔'}
       </span>
     </div>
     )
