@@ -1,0 +1,23 @@
+{
+  "vendor": "trainingweekdev21",
+  "name": "storefront-app",
+  "version": "0.1.0",
+  "title": "Taining week component",
+  "description": "Training week component example",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x"
+  },
+  "dependencies": {
+    "vtex.search-graphql": "0.x",
+    "vtex.render-runtime": "8.x",
+    "vtex.store-image": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

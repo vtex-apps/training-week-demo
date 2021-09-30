@@ -1,0 +1,35 @@
+type MasterDataUser {
+  id: ID!
+  isCorporate: Boolean
+  tradeName: String
+  homePhone: String
+  phone: String
+  stateRegistration: String
+  email: String!
+  userId: ID
+  firstName: String
+  lastName: String
+  document: String
+  isNewsletterOptIn: Boolean
+  birthDate: String
+  businessPhone: String
+  corporateDocument: String
+  corporateName: String
+  documentType: String
+  gender: String
+  rcLastCart: String
+  rcLastCartValue: String
+  rcLastSession: String
+  rcLastSessionDate: String
+}
+
+type Pagination {
+  page: Int!
+  pageSize: Int!
+  total: Int!
+}
+
+type UserPageResponse {
+  data: [MasterDataUser!]!
+  pagination: Pagination!
+}

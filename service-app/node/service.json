@@ -1,0 +1,17 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 1,
+  "minReplicas": 2,
+  "maxReplicas": 5,
+  "routes": {
+    "usersFromJsonPlaceholder": {
+      "path": "/_v/jsonplaceholder/users",
+      "public": true
+    },
+    "userById": {
+      "path": "/_v/jsonplaceholder/users/:userId",
+      "public": true
+    }
+  }
+}

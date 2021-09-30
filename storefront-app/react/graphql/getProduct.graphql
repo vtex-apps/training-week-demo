@@ -1,0 +1,12 @@
+query MyProductQuery($id: ID!) {
+  product(identifier: { field: id, value: $id }) {
+    productId
+    productName
+    linkText
+    items(filter: FIRST_AVAILABLE) {
+      images {
+        imageUrl
+      }
+    }
+  }
+}

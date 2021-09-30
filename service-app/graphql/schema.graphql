@@ -1,0 +1,15 @@
+type Query {
+  users: [User!]
+
+  masterDataUsers(
+    perPage: Int! = 10
+    pageNumber: Int! = 1
+    filter: String
+  ): UserPageResponse!
+
+  externalMasterDataUsers(
+    perPage: Int! = 10
+    pageNumber: Int! = 1
+    filter: String
+  ): UserPageResponse!
+}

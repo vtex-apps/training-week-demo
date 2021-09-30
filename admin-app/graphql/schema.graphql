@@ -1,0 +1,13 @@
+input User {
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+type Query {
+  doNotCall: Boolean
+}
+
+type Mutation {
+  addUsers(users: [User!]!): Boolean
+}

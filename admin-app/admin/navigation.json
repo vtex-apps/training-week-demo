@@ -1,0 +1,12 @@
+{
+  "section": "customer",
+  "titleId": "admin-trainingweek.navigation.label-group",
+  "searchKeyWordsHelpers": "admin-trainingweek.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-trainingweek.navigation.label-users",
+      "path": "/admin/training-week/users",
+      "searchKeyWordsHelpers": "admin-trainingweek.navigation.table.search.kws"
+    }
+  ]
+}
