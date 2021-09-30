@@ -10,10 +10,7 @@
     "messages": "1.x"
   },
   "dependencies": {
-    "vtex.search-graphql": "0.x",
-    "vtex.render-runtime": "8.x",
-    "vtex.store-image": "0.x",
-    "vtex.product-context": "0.x"
+
   },
   "registries": [
     "smartcheckout"
