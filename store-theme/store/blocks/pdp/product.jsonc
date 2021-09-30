@@ -99,7 +99,7 @@
       "rowGap": 0
     },
     "children": [
-      "drawn-badge",
+      // your custom component that uses `product-context` goes here (if you want 😄)
       "flex-layout.row#product-name",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",

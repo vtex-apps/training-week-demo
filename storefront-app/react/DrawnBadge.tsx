@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react'
+import React from 'react'
 // import { useProduct } from 'vtex.product-context'
 // import { canUseDOM } from 'vtex.render-runtime'
 

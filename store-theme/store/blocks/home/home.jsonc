@@ -6,7 +6,7 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
-      "storefront-component",
+      // your custom component goes here (if you want 😄)
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
@@ -16,17 +16,19 @@
     ]
   },
 
-  "storefront-component": {
-    "props": {
-      "productIds": [
-        1,
-        3,
-        4,
-        5,
-        10
+  /**
+    if your custom component has some kind of property settings,
+    you can place them here. Example:
+
+    "my-custom-component-name": {
+      "props": {
+        "message": "VTEX IO is awesome!"
+      },
+      "children": [
+        "rich-text"
       ]
-    }
-  },
+    },
+  */
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
