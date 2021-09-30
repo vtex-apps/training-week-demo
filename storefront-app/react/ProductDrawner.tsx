@@ -19,7 +19,7 @@ type Props = {
   productIds: number[]
 }
 
-function Greeting({ productIds = [] }: Props) {
+function ProductDrawner({ productIds = [] }: Props) {
   const [getProduct, { data, loading, called }] = useLazyQuery(GET_PRODUCT, {
     onCompleted: data => localStorage.setItem('your-product', data.product.productId)
   })
@@ -70,7 +70,7 @@ function Greeting({ productIds = [] }: Props) {
   )
 }
 
-Greeting.schema = {
+ProductDrawner.schema = {
   title: 'My component',
   type: 'object',
   properties: {
@@ -89,4 +89,4 @@ Greeting.schema = {
   },
 }
 
-export default Greeting
+export default ProductDrawner
