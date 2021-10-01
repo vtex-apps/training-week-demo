@@ -1,18 +1,12 @@
 import type { InstanceOptions, IOContext } from '@vtex/api'
 import { ExternalClient } from '@vtex/api'
 
-const routes = {
-  getUsers: () => '/users',
-}
-
-export class UsersClient extends ExternalClient {
+export class JsonPlaceholderClient extends ExternalClient {
   constructor(context: IOContext, options?: InstanceOptions) {
-    super('https://jsonplaceholder.typicode.com', context, options)
+    super('' /** Base URL goes here */, context, options)
   }
 
   public getUsers = () => {
-    return this.http.get(routes.getUsers(), {
-      metric: 'get-users',
-    })
+    // Implement a method to get users, you can use this.http.get (or other methods)
   }
 }

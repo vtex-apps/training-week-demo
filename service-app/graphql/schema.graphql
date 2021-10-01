@@ -1,15 +1,8 @@
+type OtherType {
+  message: String
+}
+
 type Query {
-  users: [User!]
-
-  masterDataUsers(
-    perPage: Int! = 10
-    pageNumber: Int! = 1
-    filter: String
-  ): UserPageResponse!
-
-  externalMasterDataUsers(
-    perPage: Int! = 10
-    pageNumber: Int! = 1
-    filter: String
-  ): UserPageResponse!
+  # You can place comments here
+  queryOne(argOne: String, argTwo: Int!): OtherType
 }
