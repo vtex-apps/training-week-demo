@@ -1,3 +1,3 @@
-mutation AddUsers($users: [User!]!) {
-  addUsers(users: $users)
+mutation MyCrazyQuery($someVariable: String) {
+  aQuery(prop: $someVariable)
 }
