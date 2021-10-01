@@ -1,6 +1,6 @@
 {
-  "product-drawner": {
-    "component": "ProductDrawner"
+  "product-draw": {
+    "component": "ProductDraw"
   },
   "drawn-badge": {
     "component": "DrawnBadge"

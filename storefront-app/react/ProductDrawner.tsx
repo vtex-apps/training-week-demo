@@ -5,7 +5,7 @@ import React from 'react'
 
 // import GET_PRODUCT from './graphql/getProduct.graphql'
 
-const ProductDrawner = () => {
+const ProductDraw = (/** { productIds } */) => {
   // const [getProduct, { data, loading, called }] = useLazyQuery(GET_PRODUCT)
 
   return (
@@ -20,10 +20,10 @@ const ProductDrawner = () => {
   )
 }
 
-ProductDrawner.schema = {
+ProductDraw.schema = {
   title: 'My component',
   type: 'object',
   properties: {},
 }
 
-export default ProductDrawner
+export default ProductDraw
