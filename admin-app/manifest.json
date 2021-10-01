@@ -9,7 +9,7 @@
     "postreleasy": "vtex publish"
   },
   "dependencies": {
-    "vtex.styleguide": "9.x"
+
   },
   "builders": {
     "react": "3.x",
