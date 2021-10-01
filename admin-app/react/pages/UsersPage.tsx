@@ -4,13 +4,11 @@ import { Button, /** IconUpload, */ Modal, Dropzone, /** Table */ } from 'vtex.s
 // import { useQuery, useMutation } from 'react-apollo'
 
 const UsersPage = () => {
-  const [isModalOpen, setModalOpen] = useState(false)
-
-  const toggleModal = () => setModalOpen((bool) => !bool)
+  const [isModalOpen, /** setModalOpen */] = useState(false)
 
   return (
     <>
-      <Modal centered isOpen={isModalOpen} onClose={toggleModal}>
+      <Modal centered isOpen={isModalOpen} onClose={() => alert('close')}>
         <div className="flex flex-column dark-gray">
           <Dropzone
             onDropAccepted={() => alert('accepted')}

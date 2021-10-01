@@ -1,11 +1,11 @@
 {
-  "section": "customer",
+  "section": "order",
   "titleId": "admin-trainingweek.navigation.label-group",
   "searchKeyWordsHelpers": "admin-trainingweek.navigation.search.kws",
   "subSectionItems": [
     {
       "labelId": "admin-trainingweek.navigation.label-users",
-      "path": "/admin/training-week/users",
+      "path": "/admin/change-me/",
       "searchKeyWordsHelpers": "admin-trainingweek.navigation.table.search.kws"
     }
   ]
