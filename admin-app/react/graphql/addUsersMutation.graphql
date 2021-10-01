@@ -1,3 +1,0 @@
-mutation AddUsers($users: [User!]!) {
-  addUsers(users: $users)
-}

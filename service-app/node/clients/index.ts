@@ -1,14 +1,11 @@
 import { IOClients } from '@vtex/api'
 
-import { UsersClient } from './users'
-import { ExternalMasterdata } from './externalMasterdata'
-
 export class Clients extends IOClients {
-  public get users() {
-    return this.getOrSet('users', UsersClient)
-  }
+  // public get jsonPlaceholder() {
+  //   return this.getOrSet('jsonPlaceholder', JsonPlaceholderClient)
+  // }
 
-  public get externalMasterdata() {
-    return this.getOrSet('externalMasterdata', ExternalMasterdata)
-  }
+  // public get externalMasterdata() {
+  //   return this.getOrSet('externalMasterdata', ExternalMasterdata)
+  // }
 }

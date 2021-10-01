@@ -1,6 +1,6 @@
 {
-  "storefront-component": {
-    "component": "Greeting"
+  "product-draw": {
+    "component": "ProductDraw"
   },
   "drawn-badge": {
     "component": "DrawnBadge"

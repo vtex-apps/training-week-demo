@@ -9,14 +9,12 @@
     "postreleasy": "vtex publish"
   },
   "dependencies": {
-    "vtex.styleguide": "9.x"
+
   },
   "builders": {
     "react": "3.x",
     "admin": "0.x",
-    "messages": "1.x",
-    "node": "6.x",
-    "graphql": "1.x"
+    "messages": "1.x"
   },
   "policies": [
     {

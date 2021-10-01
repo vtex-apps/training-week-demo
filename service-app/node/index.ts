@@ -2,18 +2,8 @@ import { method, ParamsContext, RecorderState, ServiceContext } from '@vtex/api'
 import { Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import { queries as externalUsersQueries } from './resolvers/users'
-import {
-  queries as masterDataQueries,
-  userResolvers as masterDataResolvers,
-} from './resolvers/masterdata'
-import {
-  queries as externalMasterDataQueries,
-  userResolvers as externalMasterDataResolvers,
-} from './resolvers/externalMasterdata'
-import { usersRest } from './middlewares/usersRest'
-import { userById } from './middlewares/usersById'
-import { usersPost } from './middlewares/usersPost'
+import { changeMeMiddleware } from './middlewares/changeMeMiddleware'
+import { changeMeResolver } from './resolvers/changeMeResolver'
 
 const MEDIUM_TIMEOUT_MS = 2 * 1000
 
@@ -33,22 +23,22 @@ export default new Service<Clients, RecorderState, ParamsContext>({
     },
   },
   routes: {
-    usersFromJsonPlaceholder: method({
-      GET: [usersRest],
-      POST: [usersPost]
+    changeMe: method({
+      GET: [changeMeMiddleware]
     }),
-    userById: method({
-      GET: [userById]
-    })
+    // otherRoute: method({
+    //   POST: [otherMiddleware, anotherMiddleware]
+    // })
   },
   graphql: {
-    ...masterDataResolvers,
-    ...externalMasterDataResolvers,
+    // Field resolvers usually go here
     resolvers: {
       Query: {
-        ...externalUsersQueries,
-        ...masterDataQueries,
-        ...externalMasterDataQueries,
+        // Change the names
+        queryOne: changeMeResolver
+      },
+      Mutation: {
+        // Do you have mutation resolvers?
       },
     },
   },

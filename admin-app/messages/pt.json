@@ -1,10 +1,8 @@
 {
-  "admin-trainingweek.navigation.label-group": "Training Week",
-  "admin-trainingweek.navigation.label-users": "Participantes",
-  "admin-trainingweek.navigation.label-greeting": "Bem-vind@",
+  "admin-trainingweek.navigation.label-group": "I'm not right",
+  "admin-trainingweek.navigation.label-users": "Me neither",
   "admin-trainingweek.navigation.search.kws": "teste, mock, fake",
   "admin-trainingweek.navigation.details.search.kws": "detalhe, mock, test, oi",
   "admin-trainingweek.navigation.table.search.kws": "tabela, mock, test, tchau",
-  "admin-trainingweek.users-title": "Participantes",
-  "admin-trainingweek.greeting-title": "Deixe seu Gif!"
+  "admin-trainingweek.users-title": "I think I'm not right too"
 }

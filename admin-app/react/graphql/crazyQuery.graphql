@@ -1,0 +1,3 @@
+mutation MyCrazyQuery($someVariable: String) {
+  aQuery(prop: $someVariable)
+}
