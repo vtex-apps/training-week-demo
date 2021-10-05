@@ -19,7 +19,7 @@ Replicar as rotas e queries apresentadas na Demo. O app deve possuir duas rotas:
 - [ ] Implementar resolver para a query;
 - [ ] Implementar `client` para o Master Data utilizando o `ExternalClient`;
 - [ ] Adicionar policy de `outbound-access` no `manifest` para o host `{{account}}.vtexcommercestable.com.br` e path `/*`;
-- [ ] Adicionar policy de `ADMIN_DS` no `manifest` para permitir nosso `client` utilizar o `authToken` para chamadas ao Master Data;
+- [ ] Adicionar policy de `POWER_USER_DS` no `manifest` para permitir nosso `client` utilizar o `authToken` para chamadas ao Master Data;
 - [ ] Implementar resolver para a query, utilizando o `client` anterior;
 
 ## Links úteis
