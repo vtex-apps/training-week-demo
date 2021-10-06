@@ -25,7 +25,7 @@ O campo `developerEmail` é para colocarem os seus emails durante a implementaç
 
 ### Informações adicionais
 
-  * Formato da Requisição
+* Formato da Requisição
     ```json
     {
       "domain": "Marketplace",
@@ -37,18 +37,58 @@ O campo `developerEmail` é para colocarem os seus emails durante a implementaç
     }
     ```
 
-  * Exemplos de documentos
+* Exemplos de documentos
     ```bash
     curl --location --request GET 'https://trainingweekdev21.vtexcommercestable.com.br/api/dataentities/CB/search?_fields=developerEmail,userId,orderId,cashbackValue' \
     --header 'VtexIdclientAutCookie: {{ vtex-local-token }}'
     ```
 
-    * Policy para Order API
+* Policy para Order API
 
-            OMSViewer
+        OMSViewer
 
 ### Links úteis
 - https://developers.vtex.com/vtex-rest-api/reference/documents-1
 - https://developers.vtex.com/vtex-rest-api/reference/orders
+- https://learn.vtex.com/docs/course-calling-commerce-apis-step02references-lang-pt
+- https://www.postman.com/downloads/
+
+## Admin
+
+### Objetivo
+
+Desenvolver um App de Admin para gestão operacional do cadastro das regras de Cashback. O App deve possuir uma interface visual onde o usuário consiga cadastrar valores percentuais e as regras a que eles se aplicam. A seguir **exemplos** de configurações:
+
+- Cashback de 5% para produtos da categoria com id `43`;
+- Cashback de 10% para o produto com id igual a `2843`;
+- Cashback de 3% para produtos da marca com id `2`;
+
+Os dados devem ser persistidos na entidade `CS` do Master Data. Os campos configurados são:
+
+- `cashback`: Valor Percentual de Cashback que a regra aplica;
+- `name`: Nome identificador da regra;
+- `ruleId`: Identificador do tipo regra;
+- `ruleValue`: Valor a ser verificado pela `ruleId`;
+- `developerEmail`: Email do desenvolvedor que a aplicação tá rodando.
+
+Novamente, o campo `developerEmail` é para colocarem os seus emails durante a implementação das chamadas ao Master Data. Como mais pessoas estarão usando a mesma entidade, podemos usar esse campo como identificador para não nos atrapalharmos.
+
+A regra de aplicação se baseia nos valores de `ruleId` e `ruleValue`, de forma que o primeiro identifique que atributo do produto vai ser verificado e o segundo valor procurado. Exemplos:
+
+- `ruleId=productId` e `ruleValue=33` irá aplicar o cashback para produtos de ID 33;
+- `ruleId=categoryId` e `ruleValue=7` irá aplicar o cashback para produtos de com ID de categoria 7;
+
+Podem criar as regras que quiserem, como recomendação deixamos `id do produto`, `id da categoria` e `id da marca`, mas podem utilizar a imaginação para adicionar outros (métodos de pagamento, etc).
+
+### Informações adicionais
+
+* Exemplos de documentos
+    ```bash
+    curl --location --request GET 'https://trainingweekdev21.vtexcommercestable.com.br/api/dataentities/CS/search?_fields=cashback,name,ruleId,ruleValue,developerEmail' \
+    --header 'VtexIdclientAutCookie: {{ vtex-local-token }}'
+    ```
+
+### Links úteis
+- https://developers.vtex.com/vtex-rest-api/reference/documents-1
 - https://learn.vtex.com/docs/course-calling-commerce-apis-step02references-lang-pt
 - https://www.postman.com/downloads/
