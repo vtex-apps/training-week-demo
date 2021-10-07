@@ -92,3 +92,22 @@ Podem criar as regras que quiserem, como recomendação deixamos `id do produto`
 - https://developers.vtex.com/vtex-rest-api/reference/documents-1
 - https://learn.vtex.com/docs/course-calling-commerce-apis-step02references-lang-pt
 - https://www.postman.com/downloads/
+
+
+## Arquitetura
+
+### Objetivo
+Desenhar uma arquitetura para um App de Geração de Cashback seguindo as práticas mencionadas durante a aula. O objetivo é o fidelizar o cliente por meio de geração de saldo percentual aos pedidos feitos na loja. Como requisitos podemos citar:
+
+- Elementos na frente de loja mostrando quanto de cashback o produto tá elegível. Prioridade: alta;
+- Valor total de cashback gerado pelo carrinho atual do cliente. Prioridade: média;
+- Gerar saldos somente para pedidos com status de pagamento aprovado. Prioridade: alta;
+- Tela administrativa para configuração dos valores de cashback dos produtos. Prioridade: alta;
+- Permitir configuração de cashback para métodos de pagamento específicos. Prioridade: baixa;
+- [Desafio] Integração do saldo gerado como vales presentes na VTEX. Prioridade: baixa;
+
+### Ferramentas sugeridas
+
+- https://draw.io/
+- https://whimsical.com/
+- https://www.lucidchart.com/pages/
