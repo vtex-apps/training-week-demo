@@ -10,6 +10,7 @@ Desenvolver componentes para Frente de Loja que mostram quanto de Cashback o pro
 - https://www.mooba.com.br
 - https://www.americanas.com.br
 
+___
 
 ## Backend
 
@@ -53,6 +54,7 @@ O campo `developerEmail` é para colocarem os seus emails durante a implementaç
 - https://learn.vtex.com/docs/course-calling-commerce-apis-step02references-lang-pt
 - https://www.postman.com/downloads/
 
+___
 ## Admin
 
 ### Objetivo
@@ -93,7 +95,7 @@ Podem criar as regras que quiserem, como recomendação deixamos `id do produto`
 - https://learn.vtex.com/docs/course-calling-commerce-apis-step02references-lang-pt
 - https://www.postman.com/downloads/
 
-
+___
 ## Arquitetura
 
 ### Objetivo
@@ -111,3 +113,31 @@ Desenhar uma arquitetura para um App de Geração de Cashback seguindo as práti
 - https://draw.io/
 - https://whimsical.com/
 - https://www.lucidchart.com/pages/
+
+___
+## Final
+
+### Objetivo
+Desenvolvimento de aplicação End-to-End de Cashback. Possuindo arquitetura e as apps dos desafios anteriores, deve-se conectá-las de forma que os dados apresentados na frente de loja estejam de acordo com as configurações feitas via Admin. Além disso, o serviço back-end que recebe as notifações de pedido também devem consumir as configurações do Admin.
+
+Para este App, pode continuar se utilizando separadamente ou utilizar a seguinte configuração:
+
+    trainingweekdev21.challenge-app@0.x
+
+Ela possui `whitelist` para todos os builders necessários.
+
+### Desafio Adicional
+- #1: Conectar a entidade de dados com o GiftCard Hub Protocol e configurá-lo na loja, de forma que os saldos sejam expostos para os clientes como vale compras;
+
+- #2: Utilizar os `events` para ouvir os eventos de pedidos.
+
+### Links Úteis
+
+- https://learn.vtex.com/docs/course-service-course-lang-pt
+- https://learn.vtex.com/docs/course-admin-lang-pt
+- https://learn.vtex.com/docs/course-calling-commerce-apis-lang-pt
+- https://learn.vtex.com/docs/course-store-block-lang-pt
+- https://learn.vtex.com/docs/course-service-course-step03events-lang-pt
+- https://developers.vtex.com/vtex-rest-api/reference/giftcard-hub-api-overview
+- https://github.com/vtex-apps/giftcard-protocol-example
+- https://help.vtex.com/pt/tutorial/como-integrar-um-provedor-de-gift-card-externo-a-vtex--tutorials_450
